@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@admiral-ds/react-ui": "^8.44.1",
+    "@hookform/error-message": "^2.0.1",
+    "@hookform/resolvers": "^5.0.1",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "react-hook-form": "^7.55.0",
+    "react-router-dom": "^6.30.0",
+    "styled-components": "^6.1.17",
+    "yup": "^1.6.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.13.0",
@@ -22,6 +29,7 @@
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",
     "globals": "^15.11.0",
+    "prettier": "^3.5.3",
     "typescript": "~5.6.2",
     "typescript-eslint": "^8.11.0",
     "vite": "^5.4.10"
