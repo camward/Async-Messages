@@ -1,3 +1,23 @@
+# Async Messages
+
+```bash
+# установить зависимости
+$ npm i
+
+# запустить client
+$ npm run dev
+```
+
+## Long Polling
+
+```bash
+# перейти в папку server
+$ cd src/server
+
+# запустить приложение
+$ node LongPolling.cjs
+```
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
