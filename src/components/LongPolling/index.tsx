@@ -3,7 +3,7 @@ import type { ChangeEvent } from "react";
 import { TextArea, Button } from "@admiral-ds/react-ui";
 import { CssForm, CssFormButton, CssFormMessages } from "./style";
 
-const SERVER_URL = "http://localhost:3000";
+const SERVER_URL = "http://localhost:3010";
 
 const LongPolling = () => {
   const ref = useRef<HTMLDivElement>(null);
@@ -58,7 +58,7 @@ const LongPolling = () => {
 
   return (
     <>
-      <p>LongPolling</p>
+      <p>Long Polling</p>
       <CssForm>
         <CssFormMessages>
           <div ref={ref} />

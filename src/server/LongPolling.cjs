@@ -1,6 +1,6 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3010;
 
 let clients = [];
 let messages = [];
@@ -42,5 +42,5 @@ app.post("/send", express.json(), (req, res) => {
  * Запуск сервера
  */
 app.listen(port, () => {
-  console.log(`Сервер доступен по адресу http://localhost:${port}`);
+  console.log(`Сервер LP доступен по адресу http://localhost:${port}`);
 });
