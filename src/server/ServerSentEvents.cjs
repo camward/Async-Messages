@@ -20,14 +20,14 @@ app.get("/events", (req, res) => {
 
   let count = 0;
 
-  // Отправка события каждые 5 секунд
+  // Отправка события каждую секунду
   const intervalId = setInterval(() => {
     const data = {
       message: `Новое сообщение ${++count}`,
       timestamp: dayjs().format("DD.MM HH:mm:ss"),
     };
     sendEvent(data);
-  }, 5000);
+  }, 1000);
 
   // Очистка интервала при завершении соединения
   req.on("close", () => {

@@ -1,10 +1,12 @@
 import styled from "styled-components";
+import { Theme } from "@admiral-ds/react-ui";
 
 const CssForm = styled.div`
   width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
+  margin-top: 8px;
 `;
 
 const CssFormButton = styled.div`
@@ -13,6 +15,7 @@ const CssFormButton = styled.div`
 
 const CssFormMessages = styled.div`
   font-size: 14px;
+  color: ${(props) => (props.theme as Theme).color["Neutral/Neutral 90"]};
 `;
 
 export { CssForm, CssFormButton, CssFormMessages };

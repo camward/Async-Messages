@@ -1,4 +1,5 @@
 import { useRef } from "react";
+import { T } from "@admiral-ds/react-ui";
 import { CssForm, CssFormMessages } from "./style";
 
 const SERVER_URL = "http://localhost:3011";
@@ -17,13 +18,15 @@ const ServerSentEvents = () => {
     };
   } else {
     const messageElement = document.createElement("div");
-    messageElement.textContent ="Ваш браузер не поддерживает Server-Sent Events";
+    messageElement.textContent = "Ваш браузер не поддерживает Server-Sent Events";
     ref?.current?.appendChild(messageElement);
   }
 
   return (
     <>
-      <p>Server-Sent Events</p>
+      <T font="Body/Body 1 Long" as="div">
+        Server-Sent Events
+      </T>
       <CssForm>
         <CssFormMessages>
           <div ref={ref} />

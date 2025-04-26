@@ -1,6 +1,6 @@
-import { useEffect, useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import type { ChangeEvent } from "react";
-import { TextArea, Button } from "@admiral-ds/react-ui";
+import { T, TextArea, Button } from "@admiral-ds/react-ui";
 import { CssForm, CssFormButton, CssFormMessages } from "./style";
 
 const SERVER_URL = "http://localhost:3010";
@@ -21,12 +21,11 @@ const LongPolling = () => {
       .then((response) => response.json())
       .then((data) => {
         handleIncomingMessage(data.message);
-        // Перезапускаем long poll после получения сообщения
+        // Делаем новый запрос после получения сообщения
         longPoll();
       })
       .catch((error) => {
-        console.error("Custom Error:", error);
-        // В случае ошибки перезапускаем long poll через 5 секунд
+        console.error("Ошибка. Повторный запрос через 5 секунд:", error);
         setTimeout(longPoll, 5000);
       });
   };
@@ -58,7 +57,9 @@ const LongPolling = () => {
 
   return (
     <>
-      <p>Long Polling</p>
+      <T font="Body/Body 1 Long" as="div">
+        Long Polling
+      </T>
       <CssForm>
         <CssFormMessages>
           <div ref={ref} />

@@ -7,7 +7,6 @@ body {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-  background-color: #ffffff;
 }
 
 #root {
@@ -15,21 +14,6 @@ body {
   height: 100%;
 }
 
-h1 {
+h4 {
   margin: 0 0 8px 0;
-  font-size: 1.5em;
-  font-weight: 450;
-}
-
-li {
-  font-size: 14px;
-}
-
-a {
-  text-decoration: none;
-  color: #7f7ff5;
-}
-
-a:hover {
-  color: #3d3dcf;
 }

@@ -1,12 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ThemeProvider } from "styled-components";
-import {
-  LIGHT_THEME,
-  FontsVTBGroup,
-  DropdownProvider,
-} from "@admiral-ds/react-ui";
+import { FontsVTBGroup, DropdownProvider } from "@admiral-ds/react-ui";
+import { ThemeContextProvider } from "./ThemeContextProvider";
 import App from "./App";
 import Wrapper from "./components/layout/Wrapper";
 import LongPolling from "./components/LongPolling";
@@ -67,7 +63,7 @@ const router = createBrowserRouter(
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <ThemeProvider theme={LIGHT_THEME}>
+    <ThemeContextProvider>
       <DropdownProvider>
         <FontsVTBGroup />
         <RouterProvider
@@ -77,6 +73,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
           router={router}
         />
       </DropdownProvider>
-    </ThemeProvider>
+    </ThemeContextProvider>
   </React.StrictMode>,
 );

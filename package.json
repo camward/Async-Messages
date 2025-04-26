@@ -7,9 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "server": "concurrently \"node src/server/LongPolling.cjs\" \"node src/server/ServerSentEvents.cjs\""
   },
   "dependencies": {
+    "@admiral-ds/icons": "^4.3.8",
     "@admiral-ds/react-ui": "^8.44.1",
     "@hookform/error-message": "^2.0.1",
     "@hookform/resolvers": "^5.0.1",
@@ -28,6 +30,7 @@
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
+    "concurrently": "^9.1.2",
     "eslint": "^9.13.0",
     "eslint-plugin-react-hooks": "^5.0.0",
     "eslint-plugin-react-refresh": "^0.4.14",

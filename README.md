@@ -4,28 +4,11 @@
 # установить зависимости
 $ npm i
 
+# запустить server
+$ npm run server
+
 # запустить client
 $ npm run dev
-```
-
-## Long Polling
-
-```bash
-# перейти в папку server
-$ cd src/server
-
-# запустить приложение
-$ node LongPolling.cjs
-```
-
-## Server-Sent Events
-
-```bash
-# перейти в папку server
-$ cd src/server
-
-# запустить приложение
-$ node ServerSentEvents.cjs
 ```
 
 # React + TypeScript + Vite

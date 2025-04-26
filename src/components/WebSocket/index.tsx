@@ -1,6 +1,10 @@
+import { T } from "@admiral-ds/react-ui";
+
 const WebSocket = () => (
   <>
-    <p>WebSocket</p>
+    <T font="Body/Body 1 Long" as="div">
+      WebSocket
+    </T>
   </>
 );
 
