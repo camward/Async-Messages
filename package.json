@@ -8,7 +8,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "server": "concurrently \"node src/server/LongPolling.cjs\" \"node src/server/ServerSentEvents.cjs\""
+    "server": "concurrently \"nodemon src/server/LongPolling.cjs\" \"nodemon src/server/ServerSentEvents.cjs\" \"nodemon src/server/WebSocket.cjs\""
   },
   "dependencies": {
     "@admiral-ds/icons": "^4.3.8",
@@ -18,11 +18,15 @@
     "cors": "^2.8.5",
     "dayjs": "^1.11.13",
     "express": "^5.1.0",
+    "nanoid": "^5.1.5",
+    "nodemon": "^3.1.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-hook-form": "^7.55.0",
     "react-loading-skeleton": "^3.5.0",
     "react-router-dom": "^6.30.0",
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1",
     "styled-components": "^6.1.17",
     "yup": "^1.6.1"
   },
