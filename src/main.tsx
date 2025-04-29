@@ -8,7 +8,6 @@ import Wrapper from "./components/layout/Wrapper";
 import LongPolling from "./components/LongPolling";
 import ServerSentEvents from "./components/ServerSentEvents";
 import WebSocket from "./components/WebSocket";
-import WebTransport from "./components/WebTransport";
 import "./index.css";
 
 const router = createBrowserRouter(
@@ -42,14 +41,6 @@ const router = createBrowserRouter(
       element: (
         <Wrapper>
           <WebSocket />
-        </Wrapper>
-      ),
-    },
-    {
-      path: "/web-transport",
-      element: (
-        <Wrapper>
-          <WebTransport />
         </Wrapper>
       ),
     },

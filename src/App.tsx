@@ -30,7 +30,6 @@ const App = () => {
           <li>WebSocket</li>
           <li>Server-Sent Events</li>
           <li>Long Polling</li>
-          <li>WebTransport</li>
         </ul>
       )}
     </CssWrapper>

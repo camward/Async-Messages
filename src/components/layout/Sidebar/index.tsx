@@ -34,9 +34,6 @@ const Sidebar = () => {
         <CssLink>
           <Link to={`/long-polling`}>Long Polling</Link>
         </CssLink>
-        <CssLink>
-          <Link to={`/web-transport`}>WebTransport</Link>
-        </CssLink>
       </CssSidebarTop>
       <CssSidebarBottom>
         <TooltipedButton
